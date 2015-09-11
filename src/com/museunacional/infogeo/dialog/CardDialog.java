@@ -72,7 +72,7 @@ public class CardDialog {
 
 		pos.setText(pos.getText()
 				+ " "
-				+ String.format("(%.4f,%.4f)", met.getLatitude(),
+				+ String.format("(%.4f;%.4f)", met.getLatitude(),
 						met.getLongitude()));
 
 		fact.setText(met.getFato()
@@ -80,7 +80,7 @@ public class CardDialog {
 
 		mass.setText(mass.getText() + " " + met.getInfoMass());
 
-		if (analysis == null) {
+		if (analysis == null || analysis.isEmpty()) {
 			anal.setVisibility(View.GONE);
 		} else {
 			anal.setText(Html.fromHtml(anal.getText() + " " + analysis));

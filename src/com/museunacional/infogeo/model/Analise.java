@@ -41,9 +41,6 @@ public class Analise {
 	private Double sb;//ppm
 	private Double w;//ppm
 	private Double re;//ppm
-	private String observacoes;
-	private String informacoes;
-	private String image_url;
 	
 	public Integer getId() {
 		return id;

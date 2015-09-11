@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 
 
 public class SplashActivity extends Activity {
+	
 	final static int TIME = 1000;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +68,7 @@ public class SplashActivity extends Activity {
 				
 				@Override
 				public void run() {
-					// TODO Auto-generated method stub
+					
 					activity.startActivity(new Intent(activity, MainActivity.class));
 					activity.finish();
 					
